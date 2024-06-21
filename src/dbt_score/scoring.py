@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import typing
+import math
 from dataclasses import dataclass
 
 from dbt_score.config import Config
@@ -16,7 +17,7 @@ from dbt_score.rule import RuleViolation, Severity
 class Score:
     """Class representing a score."""
 
-    value: float
+    value: float  # Keeping this as float to reflect rounded value as float
     badge: str
 
 
@@ -64,7 +65,9 @@ class Scorer:
                 * self.max_score
             )
 
-        return Score(score, self._badge(score))
+        # Round up the score and convert to float
+        rounded_score = float(math.ceil(score))
+        return Score(rounded_score, self._badge(rounded_score))
 
     def score_aggregate_models(self, scores: list[Score]) -> Score:
         """Compute the score of a list of models."""
@@ -76,7 +79,9 @@ class Scorer:
             score = Score(self.max_score, self._badge(self.max_score))
         else:
             average_score = sum(actual_scores) / len(actual_scores)
-            score = Score(average_score, self._badge(average_score))
+            # Round up the average score and convert to float
+            rounded_score = float(math.ceil(average_score))
+            score = Score(rounded_score, self._badge(rounded_score))
         return score
 
     def _badge(self, score: float) -> str:

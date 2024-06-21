@@ -47,7 +47,7 @@ class Evaluation:
         self.scores: dict[Model, Score] = {}
 
         # The aggregated project score
-        self.project_score: Score
+        self.project_score: round(Score)
 
     def evaluate(self) -> None:
         """Evaluate all rules."""

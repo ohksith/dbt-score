@@ -1,0 +1,30 @@
+[0m22:13:38.125586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7437e424dcf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7437e2649a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7437e2649b10>]}
+
+
+============================== 22:13:38.128589 | fbcb47a7-9515-4cd3-8829-f2d35ad7f4f8 ==============================
+[0m22:13:38.128589 [info ] [MainThread]: Running with dbt=1.8.3
+[0m22:13:38.129477 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/workspaces/dbt-score/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt parse --profiles-dir /workspaces/dbt-score/.dbt', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:38.130339 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/dbt-score/jaffle_shop/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:13:38.131439 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_wall_clock_time": 0.06725466, "process_user_time": 1.509612, "process_kernel_time": 0.20314, "process_mem_max_rss": "104344", "process_in_blocks": "1008", "process_out_blocks": "16", "command_success": false}
+[0m22:13:38.132222 [debug] [MainThread]: Command `dbt parse` failed at 22:13:38.132087 after 0.07 seconds
+[0m22:13:38.132805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7437e424dcf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7437e2649ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7437e2649a20>]}
+[0m22:13:38.133442 [debug] [MainThread]: Flushing usage events
+[0m22:13:58.290453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ea1580f220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ea13d21a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ea13d21a80>]}
+
+
+============================== 22:13:58.293786 | b046743f-7b5e-4574-abb1-bb932dd891e9 ==============================
+[0m22:13:58.293786 [info ] [MainThread]: Running with dbt=1.8.3
+[0m22:13:58.294711 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/workspaces/dbt-score/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt parse --profiles-dir /workspaces/dbt-score/.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:58.295559 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/dbt-score/jaffle_shop/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:13:58.296735 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_wall_clock_time": 0.07842352, "process_user_time": 1.61299, "process_kernel_time": 0.202119, "process_mem_max_rss": "103756", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m22:13:58.297575 [debug] [MainThread]: Command `dbt parse` failed at 22:13:58.297454 after 0.08 seconds
+[0m22:13:58.298263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ea1580f220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ea13d20e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ea13d21a50>]}
+[0m22:13:58.298918 [debug] [MainThread]: Flushing usage events
